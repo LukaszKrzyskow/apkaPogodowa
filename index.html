@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="main.css" type="text/css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
 
 
   <script src="timer.js"></script>
@@ -17,67 +17,70 @@
 
 <body>
   <nav class="navbar">
-    <span class="navbar-toggle" id="js-navbar-toggle">
-      <i class="fas fa-bars"></i>
-    </span>
-    <a href="#" class="logo">Weather-App</a>
-    <ul class="main-nav" id="js-menu">
-      <li class="search">
-        <form action="" class="look">
-          <div class="result">
-            <input type="text" id="search" class="prompt" autocomplete="off" placeholder="Wyszukaj">
+    <div class="container">
+      <span class="navbar-toggle" id="js-navbar-toggle">
+        <i class="fas fa-bars"></i>
+      </span>
+      <a href="#" class="logo">Weather-App</a>
+      <ul class="main-nav" id="js-menu">
+        <li class="search">
+          <form action="" class="look">
+            <input type="text" id="search" class="prompt" autocomplete="off" placeholder="search">
             <ul id="suggestions" class="suggestions">
             </ul>
-          </div>
-          <i id="ico" class="fas fa-search"></i>
-          <!-- <i id="microIco" class="fas fa-microphone"></i>
+            <i id="ico" class="fas fa-search"></i>
+            <!-- <i id="microIco" class="fas fa-microphone"></i>
           <i id="volumeIco" class="fas fa-volume-up"></i> -->
-        </form>
-      </li>
-    </ul>
+          </form>
+        </li>
+      </ul>
+    </div>
   </nav>
-
   <div class="container">
     <div class="general-data-tile">
       General data (i.e City name, Temperature, Current Time, Current Weather)
     </div>
-    <div class="tile-styling forecast-tile">
-      <h2>Forecast</h2>
-      <p> Maecenas lobortis, quam sed scelerisque tristique, purus mauris sagittis ligula, et maximus odio massa ac
-        nisi. Mauris nisl ipsum, volutpat id bibendum ut, facilisis in risus. Vestibulum pellentesque mauris at nibh
-        porttitor finibus non eu elit. Sed egestas, mi ac pulvinar dapibus, velit nisl facilisis nulla, in ultrices
-        massa sapien ut erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
-        himenaeos. Sed congue ultricies mauris quis condimentum. Sed odio orci, suscipit eu ipsum sed, sagittis luctus
-        dui. Vivamus quis sem metus. Mauris semper, risus id semper mollis, odio orci eleifend ipsum, eget suscipit elit
-        odio eu turpis. Aliquam erat volutpat. Sed ante risus, pretium id ornare id, posuere at lorem. Suspendisse
-        suscipit elit vitae tincidunt elementum. Duis sed lorem id ante dictum laoreet. Etiam non augue a dui volutpat
-        dignissim non at sapien. Maecenas eleifend convallis nulla, eu placerat massa. Nunc lobortis ex in diam
-        tristique pulvinar.
+  </div>
+  <div class="container">
+    <div class="column">
+      <div class="tile-styling forecast-tile">
+        <h2>Forecast</h2>
+        <div class="content">
 
-        Ut mattis ipsum volutpat leo consequat tincidunt. Nunc enim diam, pretium eget dolor id, placerat malesuada
-        massa. Aliquam scelerisque, neque gravida bibendum volutpat, risus risus condimentum tellus, vitae elementum
-        lacus ligula in ex. Nam nec semper sapien, eu pulvinar nibh. Etiam congue diam ut ante faucibus rhoncus. Fusce
-        pretium, enim vel ultricies aliquam, velit erat congue felis, sit amet vestibulum urna dui quis lectus. Nam
-        dignissim mollis dolor et accumsan. Nulla in lobortis risus. Vestibulum at magna semper, elementum lectus in,
-        tempor arcu. Aliquam felis nulla, consequat eu hendrerit non, vestibulum vitae nisi. Ut quis ante finibus,
-        dictum urna id, facilisis risus. Duis eleifend at est vel porta. Phasellus finibus lobortis lorem. Nulla non
-        consectetur dui, ut iaculis nunc. Pellentesque a risus est. Vestibulum at risus vel quam gravida hendrerit
-        sagittis et lacus. </p>
+        </div>
+      </div>
+      <div class="tile-styling details-tile">
+        <h2>Details</h2>
+        <div class="content">
+
+        </div>
+      </div>
+      <div class="tile-styling sunandmoon-tile">
+        <h2>Sun & Moon</h2>
+        <div class="content">
+
+        </div>
+      </div>
     </div>
-    <div class="tile-styling details-tile">
-      <h2>Details</h2>
-    </div>
-    <div class="tile-styling sunandmoon-tile">
-      <h2>Sun & Moon</h2>
-    </div>
-    <div class="tile-styling precipitation-tile">
-      <h2>Precipitation</h2>
-    </div>
-    <div class="tile-styling wind-pressure-tile">
-      <h2>Wind & Pressure</h2>
-    </div>
-    <div class="tile-styling map-tile">
-      <h2>Map / Location</h2>
+    <div class="column">
+      <div class="tile-styling precipitation-tile">
+        <h2>Precipitation</h2>
+        <div class="content">
+
+        </div>
+      </div>
+      <div class="tile-styling wind-pressure-tile">
+        <h2>Wind & Pressure</h2>
+        <div class="content">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, ab?
+        </div>
+      </div>
+      <div class="tile-styling map-tile">
+        <h2>Map / Location</h2>
+        <div class="content">
+
+        </div>
+      </div>
     </div>
   </div>
 </body>
