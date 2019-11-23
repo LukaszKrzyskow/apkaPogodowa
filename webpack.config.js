@@ -20,7 +20,28 @@ module.exports = {
                         presets: ['@babel/preset-env']
                     }
                 }
-            }
+            },
+			{
+				test: /\.(png|jpe?g|gif)$/i,
+				use: [
+				 {
+					loader: 'file-loader',
+				 },
+			   ],
+			},
+			{
+				test: /\.(html)$/,
+					use: {
+						loader: 'html-loader',
+						options: {
+						attrs: [':data-src']
+					}
+				}
+			},
+			 {
+				test: /\.css$/i,
+					use: ['style-loader', 'css-loader'],
+			}	
         ]
     }
 }
