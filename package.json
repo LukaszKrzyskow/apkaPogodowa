@@ -1,0 +1,26 @@
+{
+  "name": "projektapka",
+  "version": "1.0.0",
+  "description": "apka pogodowa",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development --watch",
+    "build": "webpack --mode production",
+    "test": "echo \"Error: no test specified\" && exit 1",
+	"live": "webpack-dev-server --inline --hot"
+  },
+  "browserslist": [
+    "last 1 version",
+    "> 1%"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.7.2",
+    "@babel/preset-env": "^7.7.1",
+    "babel-loader": "^8.0.6",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
+  }
+}
