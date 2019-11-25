@@ -1,4 +1,6 @@
 const path = require('path');
+const webpack = require("webpack");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
     entry: './src/js/app.js',
@@ -9,6 +11,12 @@ module.exports = {
     watch: false,
     mode: "development", //ta opcja zostanie pominięta jeżeli użyjemy npm run build
     devtool: "source-map",
+	plugins: [
+        new webpack.ProgressPlugin(),
+        new HtmlWebpackPlugin({
+            template: "./src/index.html"
+        })
+    ],
     module: {
         rules: [
             {
