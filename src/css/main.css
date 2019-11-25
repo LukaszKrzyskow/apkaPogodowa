@@ -13,7 +13,7 @@
   }
   
   body {
-      background-image: url("niebo.jpg");
+      background-image: url("../img/niebo.jpg");
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
