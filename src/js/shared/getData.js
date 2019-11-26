@@ -10,19 +10,21 @@ export const getData = async (param) =>{
         console.log(err);
     }
 };
-export let city;
-export const getPressure = async(param) => {
-    await getData(param).then((data) => {
-        city = data;
+
+  export const getPressure = (param) => {
+    getData(param).then((data) => {
+        let i;
+        for (i=0; i<6; i++){
+            const pressure = data.list[i].main.pressure;
+            const pressureTime = (data.list[i].dt_txt).substring(11,16);
+            console.log(pressure, pressureTime);
+            const htmlPressure = document.getElementById("airpressure");
+            htmlPressure.innerHTML += `<div><span>${pressure}hPa at ${pressureTime}</span></div>`;
+        }
+    //   const pressure = data.list[0].main.pressure;
+    //   console.log(pressure);
+    //   const htmlPressure = document.getElementById("airpressure");
+    //   const test1 = `<span>${pressure}</span>`;
+    //   htmlPressure.innerHTML = `<span>${pressure} hPa</span>`;
   });
   };
-
-  /*export const getPressure = (param) => {
-    getData(param).then((data) => {
-      const pressure = data.list[0].main.pressure;
-      console.log(pressure);
-      const htmlPressure = document.getElementById("airpressure");
-      const test1 = `<span>${pressure}</span>`;
-      htmlPressure.innerHTML = `<span>${pressure} hPa</span>`;
-  });
-  };*/

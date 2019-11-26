@@ -1,7 +1,7 @@
 import "../css/main.css";
 import { displaySuggestions } from "./shared/suggestions.js";
 import { getCityFromForm } from "./shared/fomCity.js";
-import {getPressure, city} from './shared/getData.js'
+import {getPressure} from './shared/pressure.js';
 
 const init = () => {
   const input = document.querySelector("#search");
@@ -11,4 +11,3 @@ const init = () => {
 };
 getPressure('Szczecin');
 init();
-console.log(city);
