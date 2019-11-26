@@ -1,8 +1,7 @@
 import { getForecastData } from './getForecastData.js'
 
 export const geolocation = () => {
-    console.log('chuj');
-    navigator.geolocation.getCurrentPosition(getForecastData,error);
+  navigator.geolocation.getCurrentPosition(getForecastData,error);
 }
 
 
