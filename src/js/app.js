@@ -6,9 +6,12 @@ import { geolocation } from './shared/geolocation.js';
 const init = () => {
   const input = document.querySelector("#search");
   const btnSearch = document.querySelector("#btn-search");
+  const useCurrentLocation = document.querySelector("#useCurrentLocation")
   btnSearch.addEventListener("click", getCityFromForm);
   input.addEventListener("keyup", displaySuggestions);
-  geolocation();
+  useCurrentLocation.addEventListener("click", geolocation);
+
+  // geolocation();
 };
 
 init();

@@ -17,7 +17,15 @@ export function getForecastData(position) {
       document.querySelector("#wicon").setAttribute('src',icon);
 
       infoEl.innerHTML= `${location} Current Temperature - ${tempr}°C`;
-      sunriseEl.innerHTML= `Sunrise: ${sunrise} Sunset: ${sunset}`
+      sunriseEl.innerHTML= `
+      <div class="sundiv">
+         <img class="sunicons" src="./src/img/sunrise.png">
+         <p>Sunrise: ${sunrise}</p>
+      </div>
+      <div class="sundiv">
+        <img class="sunicons" src="./src/img/sunset.png">
+        <p> Sunset: ${sunset} </p>
+      </div>`
       speedEl.innerHTML= `Wind Speed: ${speed} m/s`;
   });
 }

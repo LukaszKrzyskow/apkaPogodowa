@@ -153,6 +153,29 @@ body {
   background: none;
   padding: 11px;
   cursor: pointer;
+  margin-top: auto;
+}
+
+.sunicons {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+}
+#tequilasunrise{
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  font-size: 1.2em;
+}
+
+.sundiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#useCurrentLocation {
+  cursor: pointer;
 }
 
 .fa-search,
