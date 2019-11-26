@@ -11,7 +11,7 @@ const init = () => {
   input.addEventListener("keyup", displaySuggestions);
   useCurrentLocation.addEventListener("click", geolocation);
 
-  // geolocation();
+  geolocation();
 };
 
 init();

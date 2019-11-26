@@ -161,6 +161,11 @@ body {
   height: 60px;
   margin-right: 10px;
 }
+
+.windicon {
+  margin-left: 20px;
+  padding-bottom: 10px;
+}
 #tequilasunrise{
   display: flex;
   flex-direction: column;

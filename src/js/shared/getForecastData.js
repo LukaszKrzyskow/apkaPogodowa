@@ -65,6 +65,6 @@ export function getForecastData(position) {
         <img class="sunicons" src="./src/img/sunset.png">
         <p> Sunset: ${sunset} </p>
       </div>`
-      speedEl.innerHTML= `Wind Speed: ${speed} m/s Wind Direction: ${windDirection}`;
+      speedEl.innerHTML= `Wind Speed: ${speed} m/s <br /> Wind Direction:   ${windDirection} <img class="windicon" src="./src/img/wind.png">`;
   });
 }
