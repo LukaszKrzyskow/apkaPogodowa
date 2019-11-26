@@ -55,7 +55,7 @@ export function getForecastData(position) {
       document.querySelector("#wicon").setAttribute('src',icon);
 
 
-      infoEl.innerHTML= `${location} Current Temperature - ${tempr}°C`;
+      infoEl.innerHTML= `${location}, current temperature: ${tempr}°C`;
       sunriseEl.innerHTML= `
       <div class="sundiv">
          <img class="sunicons" src="./src/img/sunrise.png">
