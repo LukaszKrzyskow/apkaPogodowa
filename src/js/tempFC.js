@@ -1,9 +1,13 @@
 import {getData} from './getData.js'
 
-function  tempCF (tempC){
+function  tempCtoF (tempC){
 let tempF=(tempC*1.8)+32;
-return tempF,tempC;
+return tempF;
+};
+function  tempFtoC (tempF){
+let tempC=0.555*(tempF-32);
+return tempC;
 };
 
-tempCF(getData.tempr);
+tempCtoF(getData.tempr);
 //document.----.innerHTML=tempCF(getData.tempr);
