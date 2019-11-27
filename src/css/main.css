@@ -5,6 +5,7 @@
 }
 :root {
   --borderColor: #d8d8d8;
+  --secondaryFontColor: #CCCCCC;
 }
 
 html {
@@ -166,4 +167,20 @@ body {
 .fa-microphone:hover,
 .fa-volume-up:hover {
   transform: scale(1.2);
+}
+
+#airpressure div{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255,255,255,0.5);
+  padding: 5px 0;
+  color: var(--secondaryFontColor);
+}
+
+#airhumidity div{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255,255,255,0.5);
+  padding: 5px 0;
+  color: var(--secondaryFontColor);
 }

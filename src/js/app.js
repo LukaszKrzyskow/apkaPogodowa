@@ -2,6 +2,7 @@ import "../css/main.css";
 import { displaySuggestions } from "./shared/suggestions.js";
 import { getCityFromForm } from "./shared/fomCity.js";
 import {getPressure} from './shared/pressure.js';
+import { getHumidity } from "./shared/humidity";
 
 const init = () => {
   const input = document.querySelector("#search");
@@ -10,4 +11,5 @@ const init = () => {
   input.addEventListener("keyup", displaySuggestions);
 };
 getPressure('Szczecin');
+getHumidity('Szczecin');
 init();
