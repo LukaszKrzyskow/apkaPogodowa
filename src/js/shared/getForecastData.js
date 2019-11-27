@@ -37,10 +37,11 @@ const degToCard = deg => {
   }
 
 export function getForecastData(position) {
-  fetch(`${API_URL}lat=${position.coords.latitude}&lon=${position.coords.longitude}&units=metric&appid=${API_KEY}`)
+  let searchBy = (position && position.coords)?`lat=${position.coords.latitude}&lon=${position.coords.longitude}`:`q=${position}`
+    fetch(`${API_URL}${searchBy}&units=metric&appid=${API_KEY}`)
     .then(response => {
         return response.json()
-    }).then(function(data) {
+    }).then(function(data)  {
       const tempr = data.list[0].main.temp;
       const location = data.city.name;
       const infoEl = document.getElementById("info");
