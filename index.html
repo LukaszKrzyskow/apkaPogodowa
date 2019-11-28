@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="pl">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Weather-App" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>Weather-App</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <h1 href="#" class="logo">Weather-App</h1>
+      <form action="" class="form">
+        <div class="form__container">
+          <div id="useCurrentLocation"> Use current location <i class="fas fa-location-arrow"></i></div>
+          <input type="text" id="search" class="form__input" autocomplete="off" placeholder="search">
+          <ul id="suggestions-list" class="suggestions">
+          </ul>
+        </div>
+
+        <button id="btn-search" class="btn">
+          <i id="ico" class="fas fa-search"></i>
+        </button>
+      </form>
+    </div>
+  </nav>
+  <div class="container">
+    <div id="general-data" class="general-data-tile">
+
+    </div>
+  </div>
+  <div class="container">
+    <div class="column">
+      <div class="tile-styling forecast-tile">
+        <h2>Forecast</h2>
+        <div class="content">
+
+        </div>
+      </div>
+      <div class="tile-styling details-tile">
+        <h2>Details</h2>
+        <div class="content">
+
+        </div>
+      </div>
+      <div class="tile-styling humidity-tile">
+        <h2>Air humidity</h2>
+        <div class="content" id="airhumidity">
+
+        </div>
+      </div>
+      <div class="tile-styling sunandmoon-tile">
+        <h2>Sun & Moon</h2>
+        <div class="content" id="sun">
+          <div id="tequilasunrise"></div>
+
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="tile-styling precipitation-tile">
+        <h2>Precipitation</h2>
+        <div class="content">
+
+        </div>
+      </div>
+      <div class="tile-styling wind-pressure-tile">
+        <h2>Pressure</h2>
+        <div class="content" id="airpressure">
+
+        </div>
+      </div>
+      <div class="tile-styling wind-tile">
+        <h2>Wind</h2>
+        <div class="content" id="winda">
+
+        </div>
+      </div>
+      <div class="tile-styling map-tile">
+        <h2>Map / Location</h2>
+        <div class="content">
+
+        </div>
+      </div>
+    </div>
+  </div>
+<script type="text/javascript" src="bundle.js"></script></body>
+
+</html>
