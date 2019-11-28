@@ -18,7 +18,6 @@
       <h1 href="#" class="logo">Weather-App</h1>
       <form action="" class="form">
         <div class="form__container">
-         <div id="useCurrentLocation"> Use current location <i class="fas fa-location-arrow"></i></div>
           <input type="text" id="search" class="form__input" autocomplete="off" placeholder="search">
           <ul id="suggestions-list" class="suggestions">
           </ul>
@@ -32,10 +31,7 @@
   </nav>
   <div class="container">
     <div class="general-data-tile">
-<p id = "info"> General data (i.e City name, Temperature, Current Time, Current Weather)</p> 
-<div id = "icon"><img id = "wicon" src = "" alt = "icon">
-    </div> 
-      
+      General data (i.e City name, Temperature, Current Time, Current Weather)
     </div>
   </div>
   <div class="container">
@@ -52,10 +48,15 @@
 
         </div>
       </div>
+      <div class="tile-styling humidity-tile">
+        <h2>Air humidity</h2>
+        <div class="content" id="airhumidity">
+          
+        </div>
+      </div>
       <div class="tile-styling sunandmoon-tile">
         <h2>Sun & Moon</h2>
-        <div class="content" id="sun">
-          <div id = "tequilasunrise"></div>
+        <div class="content">
 
         </div>
       </div>
@@ -68,15 +69,16 @@
         </div>
       </div>
       <div class="tile-styling wind-pressure-tile">
-        <h2>Wind & Pressure</h2>
-       <div id="wind-pressure-content">
-       
-        <div class="content" id="airpressure"></div>
+        <h2>Pressure</h2>
+        <div class="content" id="airpressure">
           
-      
-        <div class="content" id="winda">
         </div>
       </div>
+      <div class="tile-styling wind-tile">
+        <h2>Wind</h2>
+        <div class="content" id="wind">
+          
+        </div>
       </div>
       <div class="tile-styling map-tile">
         <h2>Map / Location</h2>

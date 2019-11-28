@@ -5,6 +5,7 @@
 }
 :root {
   --borderColor: #d8d8d8;
+  --secondaryFontColor: #cccccc;
 }
 
 html {
@@ -17,7 +18,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 100vh; /*do zmiany*/
+  height: 100%; /*do zmiany*/
   color: #fff;
 }
 
@@ -153,40 +154,8 @@ body {
   background: none;
   padding: 11px;
   cursor: pointer;
-  margin-top: auto;
 }
 
-.sunicons {
-  width: 60px;
-  height: 60px;
-  margin-right: 10px;
-}
-
-.windicon {
-  margin-left: 20px;
-  padding-bottom: 10px;
-}
-#tequilasunrise{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  font-size: 1.2em;
-}
-
-.sundiv {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#useCurrentLocation {
-  cursor: pointer;
-}
-#wind-pressure-content {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
 .fa-search,
 .fa-microphone,
 .fa-volume-up {
@@ -198,4 +167,32 @@ body {
 .fa-microphone:hover,
 .fa-volume-up:hover {
   transform: scale(1.2);
+}
+
+#airpressure div {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 5px 0;
+  color: var(--secondaryFontColor);
+}
+
+#airhumidity div {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 5px 0;
+  color: var(--secondaryFontColor);
+}
+
+.forecast {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px 0;
+}
+
+.forecast div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
