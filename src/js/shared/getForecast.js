@@ -1,7 +1,6 @@
 const moment = require("moment");
 import { getData } from "./getData.js";
 import { API_ICON } from "../constants/constants.js";
-import { kelvinToCelsius } from "../helpers/kelvinToCelsius.js";
 
 export const getForecast = param => {
   const forecastTile = document.querySelector(".forecast-tile");
@@ -15,9 +14,7 @@ export const getForecast = param => {
       const div = document.createElement("div");
       const icon = `<img src="${API_ICON}/${w.weather[0].icon}.png" alt="${w.weather[0].description}" />`;
       const weekDay = `<span>${moment(w.dt_txt).format("ddd")}</span>`;
-      div.innerHTML = `${weekDay} ${icon} <span>${kelvinToCelsius(
-        w.main.temp
-      )} &#x2103</span>`;
+      div.innerHTML = `${weekDay} ${icon} <span>${w.main.temp.toFixed()} &#x2103</span>`;
       forecastHTML.appendChild(div);
     });
     forecastTile.appendChild(forecastHTML);

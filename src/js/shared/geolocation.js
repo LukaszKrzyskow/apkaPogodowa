@@ -1,10 +1,9 @@
-import { getForecastData } from './getForecastData.js'
+import { showData } from "./fomCity";
 
 export const geolocation = () => {
-  navigator.geolocation.getCurrentPosition(getForecastData,error);
-}
-
+  navigator.geolocation.getCurrentPosition(showData, error);
+};
 
 const error = error => {
-    console.log(error);
-}
+  console.log(error);
+};
