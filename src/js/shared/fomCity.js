@@ -4,6 +4,7 @@ import { getHumidity } from "./humidity.js";
 import { getForecast } from "./getForecast.js";
 import { getGeneral } from "./general.js";
 import { getForecastData } from "./getForecastData.js";
+import { getPrecipitation } from "./precipitation.js";
 export const getCityFromForm = e => {
   e.preventDefault();
   const input = document.querySelector("#search");
@@ -16,4 +17,5 @@ export const showData = param => {
   getForecast(param);
   getGeneral(param);
   getForecastData(param);
+  getPrecipitation(param);
 };
