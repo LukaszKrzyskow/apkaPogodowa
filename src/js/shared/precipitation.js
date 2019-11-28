@@ -5,7 +5,7 @@ export const getPrecipitation = (param) => {
     htmlPrecipitation.innerHTML="";
     getData(param).then((data) => {
         let i;
-        for (i = 0; i < 6; i++) {
+        for (i = 0; i < 5; i++) {
             const precipitationTime = (data.list[i].dt_txt).substring(11, 16);
             if (data.list[i].rain){
                 const precipitation = Object.values(data.list[i].rain)[0];
