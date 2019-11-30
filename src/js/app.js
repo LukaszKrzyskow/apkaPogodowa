@@ -10,7 +10,7 @@ const init = () => {
   const btnSearch = document.querySelector("#btn-search");
   const useCurrentLocation = document.querySelector("#useCurrentLocation");
   btnSearch.addEventListener("click", getCityFromForm);
-  // input.addEventListener("keyup", displaySuggestions);
+  input.addEventListener("keyup", displaySuggestions);
   useCurrentLocation.addEventListener("click", geolocation);
 };
 
