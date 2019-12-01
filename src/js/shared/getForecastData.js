@@ -37,6 +37,10 @@ const degToCard = deg => {
   }
 
 export function getForecastData(position) {
+    const sunriseEl = document.getElementById("tequilasunrise");
+    const speedEl = document.getElementById("winda");
+    sunriseEl.innerHTML = "";
+    speedEl.innerHTML = "";
   let searchBy = (position && position.coords)?`lat=${position.coords.latitude}&lon=${position.coords.longitude}`:`q=${position}`
     fetch(`${API_URL}${searchBy}&units=metric&appid=${API_KEY}`)
     .then(response => {
@@ -48,9 +52,6 @@ export function getForecastData(position) {
       const sunset = new Date(data.city.sunset*1000).toLocaleTimeString();
       const speed = data.list[0].wind.speed;
       const windDirection = degToCard(data.list[0].wind.deg);
-      const speedEl = document.getElementById("winda");
-    
-
       sunriseEl.innerHTML= `
       <div class="sundiv">
          <img class="sunicons" src="./src/img/sunrise.png">

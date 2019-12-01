@@ -17,8 +17,13 @@ const filterSuggestions = what => {
 };
 
 export async function displaySuggestions() {
-  const suggestiosnUl = document.querySelector("#suggestions-list");
+  const suggestionsUl = document.querySelector("#suggestions-list");
   const suggestions = await filterSuggestions(this.value);
+  console.log(this.value.length);
+  if (this.value.length === 0){
+    suggestionsUl.innerHTML = "";
+  }
+  else{
   const html = await suggestions
     .map(({ name, country }) => {
       const regex = new RegExp(this.value, "gi");
@@ -26,6 +31,7 @@ export async function displaySuggestions() {
       return `<li>${city}, ${country}</li>`;
     })
     .join("");
-
-  suggestiosnUl.innerHTML = html;
+  
+  suggestionsUl.innerHTML = html;
+  }
 }

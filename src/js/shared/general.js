@@ -13,7 +13,7 @@ export const getGeneral = param => {
     const { name, country } = data.city;
     const weekday = moment().format("ddd");
     const actualDate = moment().format("DD.MM");
-    const actualTime = moment().format("hh:mm");
+    const actualTime = moment().format("LT");
     const generalTile = document.querySelector("#general-data");
     const localisation = document.createElement("div");
     localisation.classList.add("general-tile-localisation");
